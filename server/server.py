@@ -10,22 +10,6 @@ import pathlib
 
 # python server.py filename clientsnumber platform
 
-filename=time.strftime("%Y-%m-%d-%H-%M-%S",time.localtime())+"-log.txt"
-pathwindows=pathlib.Path("server/Logs/"+filename)
-pathubuntu=pathlib.Path("Logs/"+filename)
-if sys.argv[3] == "windows":
-    pathlib.Path.touch(pathwindows)
-    logging.basicConfig(filename=pathwindows,level=logging.DEBUG,
-                    format="%(name)s: %(message)s \n",
-                    )
-elif sys.argv[3]=="ubuntu":
-    pathlib.Path.touch(pathubuntu)
-    logging.basicConfig(filename=pathubuntu,level=logging.DEBUG,
-                    format="%(name)s: %(message)s \n",
-                    )
-
-
-
 def log(str):
     print(str)
     logging.info(str)
@@ -36,10 +20,29 @@ testclients = sys.argv[2]
 concurrentConnections=0
 clients=[]
 
-
-
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+
+filename=time.strftime("%Y-%m-%d-%H-%M-%S",time.localtime())+"-log.txt"
+pathwindows=pathlib.Path("server/Logs/"+filename)
+pathubuntu=pathlib.Path("Logs/"+filename)
+
 server_address = ("", 3000)
+
+if sys.argv[3] == "windows":
+    pathlib.Path.touch(pathwindows)
+    logging.basicConfig(filename=pathwindows,level=logging.DEBUG,
+                    format="%(name)s: %(message)s \n",
+                    )
+elif sys.argv[3]=="ubuntu":
+    pathlib.Path.touch(pathubuntu)
+    logging.basicConfig(filename=pathubuntu,level=logging.DEBUG,
+                    format="%(name)s: %(message)s \n",
+                    )
+    ipv4 = os.popen('ip addr show eth0').read().split("inet ")[1].split("/")[0]
+    print(ipv4)
+    server_address=(ipv4,3000)
+
 hostname=socket.gethostname() 
 ipadress=socket.gethostbyname(hostname) 
 
@@ -52,6 +55,8 @@ server.listen(30)
 
 log("Server Listening on: "+str(ipadress))
 log("File to send: "+testfile.name+"number of clients: "+testclients)
+
+
 
 def calculatemd5(file):
     content = file.read()
