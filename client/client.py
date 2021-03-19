@@ -8,7 +8,7 @@ import hashlib
 import sys
 import pathlib
 
-# python client.py numberofclients serveraddress platform
+# python client.py numberofclients serveraddress
 
 # Global variables
 clientsNumber=sys.argv[1]
