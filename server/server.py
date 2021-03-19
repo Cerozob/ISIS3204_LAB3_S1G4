@@ -41,11 +41,11 @@ elif sys.argv[3]=="ubuntu":
                     )
     ipv4 = os.popen('ip addr show ens33').read().split("inet ")[1].split("/")[0]
     server_address=(ipv4,3000)
+    ipaddress=ipv4
     testfile = pathlib.Path(sys.argv[1])
 
 hostname=socket.gethostname() 
-ipadress=socket.gethostbyname(hostname) 
-
+ipaddress=server_address[0]
 try:
     server.bind(server_address)
 except:
@@ -53,7 +53,7 @@ except:
 
 server.listen(30)
 
-log("Server Listening on: "+str(ipadress))
+log("Server Listening on: "+str(ipaddress))
 log("File to send: "+testfile.name+"number of clients: "+testclients)
 
 
