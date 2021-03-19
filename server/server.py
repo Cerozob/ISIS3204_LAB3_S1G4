@@ -6,15 +6,23 @@ import time
 from threading import Thread
 import hashlib
 import sys
+import pathlib
 
 filename=time.strftime("%Y-%m-%d-%H-%M-%S",time.localtime())+"-log.txt"
-logging.basicConfig(filename=filename,level=logging.DEBUG,
+path=pathlib.Path("server/Logs/"+filename)
+pathlib.Path.touch(path)
+logging.basicConfig(filename=path,level=logging.DEBUG,
                     format="%(name)s: %(message)s",
                     )
+
+def log(str):
+    logging.info(str)
 
 # Python server.py filename clientsnumber
 testfile = sys.argv[1]
 testclients = sys.argv[2]
+
+
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_address = ("localhost", 3000)
@@ -26,19 +34,18 @@ except:
 
 server.listen(30)
 
-logging.info("Server Listening on: "+server_address)
-
+log("Server Listening on: "+str(server_address))
+log("File to send: "+testfile+"number of clients: "+testclients)
 concurrentConnections=0
-
 clients=[]
-
 readyClients=0
 
 def calculatemd5(file):
     content = file.read()
     md5=hashlib.md5(content)
-    md5bytes=md5.digest()
-    return md5bytes
+    md5str=md5.hexdigest()
+    log("Server: File MD5 is "+md5str)
+    return md5str
 
 def getData(sock):
     datos = bytearray()
@@ -47,20 +54,22 @@ def getData(sock):
         datos += bytearray(parte)
         if parte < 4096:
                 break
+    log("Server: Bytes received: "+str(len(datos)))
     return datos
 
 def sendData(sock,data):
+    log("Server: sending "+str(len(data))+" Bytes")
     sock.sendall(data)
 
 def sendFile(sock,filename):
     file=open(filename,"rb")
-    logging.info("enviando archivo: "+filename+"; tamaño: "+os.path.getsize(filename)+"\n desde: "+sock.getsockname()+" hacia: "+sock.getpeername())
+    logging.info("Sending file: "+filename+"; Size: "+os.path.getsize(filename)+"\n from: "+sock.getsockname()+" to: "+sock.getpeername())
     sock.sendfile(file)
     file.close()
 
 def sendMD5(sock,filename):
     file=open(filename,"rb")
-    md5=calculatemd5(file)
+    md5=calculatemd5(file).encode("utf-8")
     sock.sendall(md5)
     file.close()
 
@@ -80,6 +89,8 @@ class ClientThread(Thread):
         self.kill=True
 
     def run(self):
+        hello="Hello"
+        self.sock.send(hello.encode("utf-8"))
         while True:
             data = getData(self.sock)
             message = data.decode("utf-8")
@@ -88,9 +99,14 @@ class ClientThread(Thread):
             elif message.lower() == "ready":
                 readyClients+=1
                 self.ready=True
+                send="Filename:"+testfile
+                msgsend=send.encode("utf-8")
+                sendData(self.sock,msgsend)
                 self.md5=False
             elif message.lower() == "md5":
                 self.md5=True
+                msgsend="MD5".encode("utf-8")
+                sendData(self.sock,msgsend)
             if self.kill:
                 break
         self.sock.close()
