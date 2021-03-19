@@ -21,8 +21,8 @@ if sys.argv[3] == "windows":
                     format="%(name)s: %(message)s \n",
                     )
 elif sys.argv[3]=="ubuntu":
-    pathlib.Path.touch(pathwindows)
-    logging.basicConfig(filename=pathwindows,level=logging.DEBUG,
+    pathlib.Path.touch(pathubuntu)
+    logging.basicConfig(filename=pathubuntu,level=logging.DEBUG,
                     format="%(name)s: %(message)s \n",
                     )
 
