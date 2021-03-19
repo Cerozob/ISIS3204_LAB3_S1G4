@@ -80,8 +80,12 @@ def sendFile(sock,filename,client):
     sock.send(send)
     time.sleep(0.5)
     log("Sending file: "+filename.name+"; Size: "+str(size)+"\n from: "+str(sock.getsockname())+" to client #"+str(client)+" with address: "+str(sock.getpeername()))
+    start=time.time()
     sock.sendfile(file)
     file.close()
+    end=time.time()
+    total=end-start
+    log("Server: elapsed time to transfer file from "+str(sock.getsockname())+" to client #"+str(client)+" with address: "+str(sock.getpeername())+" :"+str(total)+"milliseconds")
 
 def sendMD5(sock,filename,client):
     file=open(filename,"rb")
