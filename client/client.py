@@ -10,13 +10,14 @@ import pathlib
 
 
 filename=time.strftime("%Y-%m-%d-%H-%M-%S",time.localtime())+"-log.txt"
-path=pathlib.Path("server/Logs/"+filename)
+path=pathlib.Path("client/Logs/"+filename)
 pathlib.Path.touch(path)
 logging.basicConfig(filename=path,level=logging.DEBUG,
                     format="%(name)s: %(message)s",
                     )
 
 def log(str):
+    print(str)
     logging.info(str)
 
 clientsNumber=sys.argv[1]
@@ -40,10 +41,21 @@ def getData(sock,cident):
     while True:
         parte = sock.recv(4096)
         datos += bytearray(parte)
-        if parte < 4096:
+        if len(parte) < 4096:
                 break
     log("Client #"+str(cident)+": Bytes received: "+str(len(datos)))
     return datos
+
+def getDataSize(sock,size,cident):
+    datos = bytearray()
+    while True:
+        parte = sock.recv(1024)
+        datos += bytearray(parte)
+        if len(datos)>=size:
+            break
+    log("Client #"+str(cident)+": Bytes received: "+str(len(datos)))
+    return datos
+
 
 def sendData(sock,data,cident):
     log("Client #"+str(cident)+": sending "+str(len(data))+" Bytes")
@@ -58,8 +70,8 @@ class Client(Thread):
         self.md5=False
         self.kill = False
         self.id=id
-        self.filename="Cliente"+self.id+"-Prueba-"+clientsNumber+".txt"
-        logging.info(" New thread started for Cliente"+str(self.id)+";"+socket.getsockname())
+        self.filename="Cliente"+str(self.id)+"-Prueba-"+str(clientsNumber)+".txt"
+        log("New thread started for Cliente"+str(self.id)+";"+str(socket.getsockname()))
 
     def stop(self):
         self.kill=True
@@ -68,40 +80,44 @@ class Client(Thread):
     def run(self):
         
         fullpath=pathlib.Path("client/ArchivosRecibidos/"+self.filename)
-        fullpath.touch()
+        pathlib.Path.touch(fullpath)
         while True: 
             data = getData(self.sock,self.id)
             message=data.decode("utf-8")
+            log("Client#"+str(self.id)+": received message:" +message)
             if message.lower() == "hello":
                 send="Ready".encode("utf-8")
                 sendData(self.sock,send,self.id)
-            if message.lower().startswith()== "filename:":
+            if message.lower().startswith("filename"):
                 self.ready=True
-            if self.ready and data:
+            if message.lower().startswith("file:"):
+                size=int(message.split(":")[1])
+                filedata=getDataSize(self.sock,size,self.id)
                 file=open(fullpath,"wb")
-                file.write(data)
+                file.write(filedata)
                 file.close()
+                log("file saved as: "+fullpath.name)
                 msgsend="MD5".encode("utf-8")
                 sendData(self.sock,msgsend,self.id)
-                self.md5=True
-            if message.lower() == "md5":
-                self.md5=True
-            if self.md5 and data:
+            if message.lower().startswith("md5:"):
+                md5=message.split(":")[1]
                 file=open(fullpath,"rb")
                 hash1=calculatemd5(file,self.id)
-                hash2=message
-                result=comparehashes(hash1,hash2)
-                log("Client#"+str(self.id)+": hashing comparison result: "+str(result))
+                comparehashes(hash1,md5,self.id)
+                sendData(self.sock,"exit".encode("utf-8"),self.id)
+            if message.lower() == "exit":
+                break
             if self.kill:
                 break 
+        log("closing connection from cliente#"+str(self.id))
         self.sock.close()
 
 i=0
-while i < clientsNumber:
+while i < int(clientsNumber):
     serveraddress=sys.argv[2]
     sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM) 
-    sock.connect(address=(serveraddress,3000))
-    logging.info("Connected to"+sock.getsockname())
-    newthread = Client(sock)
+    sock.connect((serveraddress,3000))
+    log("Connected to"+str(sock.getsockname()))
+    newthread = Client(sock,i)
     newthread.start()
     i+=1
