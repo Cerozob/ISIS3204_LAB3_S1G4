@@ -12,7 +12,7 @@ filename=time.strftime("%Y-%m-%d-%H-%M-%S",time.localtime())+"-log.txt"
 path=pathlib.Path("server/Logs/"+filename)
 pathlib.Path.touch(path)
 logging.basicConfig(filename=path,level=logging.DEBUG,
-                    format="%(name)s: %(message)s",
+                    format="%(name)s: %(message)s \n",
                     )
 
 def log(str):
@@ -101,7 +101,7 @@ class ClientThread(Thread):
             message = data.decode("utf-8")
             log("Server: received message from Client#"+str(self.id)+":" +message)
             if message.lower() == "exit":
-                sendData(self.sock,"exit".encode("utf-8"))
+                sendData(self.sock,"exit".encode("utf-8"),self.id)
                 break
             elif message.lower() == "ready":
                 log("client #"+str(self.id)+"is ready to get a file")

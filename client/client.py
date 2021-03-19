@@ -86,7 +86,7 @@ class Client(Thread):
             data = getData(self.sock,self.id)
             message=data.decode("utf-8")
             log("Client#"+str(self.id)+": received message:" +message)
-            if message.lower() == "hello":
+            if message.lower().startswith("hello"):
                 send="Ready".encode("utf-8")
                 sendData(self.sock,send,self.id)
             if message.lower().startswith("filename"):
@@ -106,11 +106,12 @@ class Client(Thread):
                 hash1=calculatemd5(file,self.id)
                 comparehashes(hash1,md5,self.id)
                 sendData(self.sock,"exit".encode("utf-8"),self.id)
+                self.stop()
             if message.lower() == "exit":
                 break
             if self.kill:
                 break 
-        log("closing connection from cliente#"+str(self.id))
+        log("closing connection from client#"+str(self.id))
         self.sock.close()
 
 i=0
