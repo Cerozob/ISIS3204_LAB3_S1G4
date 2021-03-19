@@ -24,21 +24,15 @@ server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 
 filename=time.strftime("%Y-%m-%d-%H-%M-%S",time.localtime())+"-log.txt"
-pathwindows=pathlib.Path("server/Logs/"+filename)
-pathubuntu=pathlib.Path("Logs/"+filename)
+path=pathlib.Path("Logs/"+filename)
 
 server_address = ("", 3000)
 
-if sys.argv[3] == "windows":
-    pathlib.Path.touch(pathwindows)
-    logging.basicConfig(filename=pathwindows,level=logging.DEBUG,
+pathlib.Path.touch(path)
+logging.basicConfig(filename=path,level=logging.DEBUG,
                     format="%(name)s: %(message)s \n",
                     )
-elif sys.argv[3]=="ubuntu":
-    pathlib.Path.touch(pathubuntu)
-    logging.basicConfig(filename=pathubuntu,level=logging.DEBUG,
-                    format="%(name)s: %(message)s \n",
-                    )
+if sys.argv[3]=="ubuntu":
     ipv4 = os.popen('ip addr show ens33').read().split("inet ")[1].split("/")[0]
     server_address=(ipv4,3000)
     ipaddress=ipv4

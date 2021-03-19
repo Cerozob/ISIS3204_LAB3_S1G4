@@ -14,18 +14,12 @@ import pathlib
 clientsNumber=sys.argv[1]
 
 filename=time.strftime("%Y-%m-%d-%H-%M-%S",time.localtime())+"-log.txt"
-pathwindows=pathlib.Path("client/Logs/"+filename)
-pathubuntu=pathlib.Path("Logs/"+filename)
-if sys.argv[3] == "windows":
-    pathlib.Path.touch(pathwindows)
-    logging.basicConfig(filename=pathwindows,level=logging.DEBUG,
-                    format="%(name)s: %(message)s \n",
-                    )
-elif sys.argv[3]=="ubuntu":
-    pathlib.Path.touch(pathubuntu)
-    logging.basicConfig(filename=pathubuntu,level=logging.DEBUG,
-                    format="%(name)s: %(message)s \n",
-                    )
+path=pathlib.Path("Logs/"+filename)
+
+pathlib.Path.touch(path)
+logging.basicConfig(filename=path,level=logging.DEBUG,
+                format="%(name)s: %(message)s \n",
+                )
 
 def log(str):
     print(str)
@@ -74,14 +68,13 @@ def sendData(sock,data,cident):
 
 class Client(Thread):
 
-    def __init__(self,socket,id,plat):
+    def __init__(self,socket,id):
         Thread.__init__(self)
         self.sock = socket
         self.ready = False
         self.md5=False
         self.kill = False
         self.id=id
-        self.plat=plat
         self.filename="Cliente"+str(self.id)+"-Prueba-"+str(clientsNumber)+".txt"
         log("New thread started for Cliente"+str(self.id)+";"+str(socket.getsockname()))
 
@@ -90,9 +83,7 @@ class Client(Thread):
 
     
     def run(self):
-        fullpath=pathlib.Path("client/ArchivosRecibidos/"+self.filename)
-        if self.plat=="ubuntu":
-            fullpath=pathlib.Path("ArchivosRecibidos/"+self.filename)
+        fullpath=pathlib.Path("ArchivosRecibidos/"+self.filename)
         pathlib.Path.touch(fullpath)
         while True: 
             data = getData(self.sock,self.id)
@@ -132,6 +123,6 @@ while i < int(clientsNumber):
     sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM) 
     sock.connect((serveraddress,3000))
     log("Connected to"+str(sock.getsockname()))
-    newthread = Client(sock,i,sys.argv[3])
+    newthread = Client(sock,i)
     newthread.start()
     i+=1
