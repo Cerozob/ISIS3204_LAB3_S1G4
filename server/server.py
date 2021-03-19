@@ -82,8 +82,9 @@ def sendData(sock,data,client):
 def sendFile(sock,filename,client):
     file=open(filename,"rb")
     size=os.path.getsize(filename)
-    send=("file:"+str(size)).encode("utf-8")
+    send=("file:"+str(size)+":").encode("utf-8")
     sock.send(send)
+    time.sleep(0.5)
     log("Sending file: "+filename.name+"; Size: "+str(size)+"\n from: "+str(sock.getsockname())+" to client #"+str(client)+" with address: "+str(sock.getpeername()))
     sock.sendfile(file)
     file.close()
