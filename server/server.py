@@ -8,18 +8,29 @@ import hashlib
 import sys
 import pathlib
 
+# python server.py filename clientsnumber platform
+
 filename=time.strftime("%Y-%m-%d-%H-%M-%S",time.localtime())+"-log.txt"
-path=pathlib.Path("server/Logs/"+filename)
-pathlib.Path.touch(path)
-logging.basicConfig(filename=path,level=logging.DEBUG,
+pathwindows=pathlib.Path("server/Logs/"+filename)
+pathubuntu=pathlib.Path("Logs/"+filename)
+if sys.argv[3] == "windows":
+    pathlib.Path.touch(pathwindows)
+    logging.basicConfig(filename=pathwindows,level=logging.DEBUG,
                     format="%(name)s: %(message)s \n",
                     )
+elif sys.argv[3]=="ubuntu":
+    pathlib.Path.touch(pathwindows)
+    logging.basicConfig(filename=pathwindows,level=logging.DEBUG,
+                    format="%(name)s: %(message)s \n",
+                    )
+
+
 
 def log(str):
     print(str)
     logging.info(str)
 
-# Python server.py filename clientsnumber
+
 testfile = pathlib.Path("server/"+sys.argv[1])
 testclients = sys.argv[2]
 concurrentConnections=0
@@ -29,6 +40,8 @@ clients=[]
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_address = ("", 3000)
+hostname=socket.gethostname() 
+ipadress=socket.gethostbyname(hostname) 
 
 try:
     server.bind(server_address)
@@ -37,7 +50,7 @@ except:
 
 server.listen(30)
 
-log("Server Listening on: "+str(server_address))
+log("Server Listening on: "+str(ipadress))
 log("File to send: "+testfile.name+"number of clients: "+testclients)
 
 def calculatemd5(file):

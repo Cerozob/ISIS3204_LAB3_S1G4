@@ -7,14 +7,23 @@ import hashlib
 import sys
 import pathlib
 
+# python client.py numberofclients serveraddress platform
+
 # Global variables
 clientsNumber=sys.argv[1]
 
 filename=time.strftime("%Y-%m-%d-%H-%M-%S",time.localtime())+"-log.txt"
-path=pathlib.Path("client/Logs/"+filename)
-pathlib.Path.touch(path)
-logging.basicConfig(filename=path,level=logging.DEBUG,
-                    format="%(name)s: %(message)s",
+pathwindows=pathlib.Path("server/Logs/"+filename)
+pathubuntu=pathlib.Path("Logs/"+filename)
+if sys.argv[3] == "windows":
+    pathlib.Path.touch(pathwindows)
+    logging.basicConfig(filename=pathwindows,level=logging.DEBUG,
+                    format="%(name)s: %(message)s \n",
+                    )
+elif sys.argv[3]=="ubuntu":
+    pathlib.Path.touch(pathwindows)
+    logging.basicConfig(filename=pathwindows,level=logging.DEBUG,
+                    format="%(name)s: %(message)s \n",
                     )
 
 def log(str):
