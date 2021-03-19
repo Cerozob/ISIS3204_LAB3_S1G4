@@ -39,8 +39,7 @@ elif sys.argv[3]=="ubuntu":
     logging.basicConfig(filename=pathubuntu,level=logging.DEBUG,
                     format="%(name)s: %(message)s \n",
                     )
-    ipv4 = os.popen('ip addr show eth0').read().split("inet ")[1].split("/")[0]
-    print(ipv4)
+    ipv4 = os.popen('ip addr show ens33').read().split("inet ")[1].split("/")[0]
     server_address=(ipv4,3000)
     testfile = pathlib.Path(sys.argv[1])
 
