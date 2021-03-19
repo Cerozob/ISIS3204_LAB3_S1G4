@@ -42,6 +42,7 @@ elif sys.argv[3]=="ubuntu":
     ipv4 = os.popen('ip addr show eth0').read().split("inet ")[1].split("/")[0]
     print(ipv4)
     server_address=(ipv4,3000)
+    testfile = pathlib.Path(sys.argv[1])
 
 hostname=socket.gethostname() 
 ipadress=socket.gethostbyname(hostname) 
