@@ -1,13 +1,14 @@
 import sys
 import socket
 import logging
-import os
 import time
 from threading import Thread
 import hashlib
 import sys
 import pathlib
 
+# Global variables
+clientsNumber=sys.argv[1]
 
 filename=time.strftime("%Y-%m-%d-%H-%M-%S",time.localtime())+"-log.txt"
 path=pathlib.Path("client/Logs/"+filename)
@@ -20,7 +21,7 @@ def log(str):
     print(str)
     logging.info(str)
 
-clientsNumber=sys.argv[1]
+
 
 def calculatemd5(file,cident):
     content = file.read()
