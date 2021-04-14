@@ -1,0 +1,29 @@
+prueba1
+1 cliente 100MB
+SERVER: python3.9 server.py dummy100MB 1 ubuntu
+CLIENT: python client.py 1 172.19.128.74
+
+prueba2
+1 cliente 250MB
+SERVER: python3.9 server.py dummy250MB 1 ubuntu
+CLIENT: python client.py 1 172.19.128.74
+
+prueba3
+5 clientes 100MB
+SERVER: python3.9 server.py dummy100MB 5 ubuntu
+CLIENT: python client.py 5 172.19.128.74
+
+prueba4
+5 clientes 250MB
+SERVER: python3.9 server.py dummy250MB 5 ubuntu
+CLIENT: python client.py 5 172.19.128.74
+
+prueba5
+10 clientes 100MB
+SERVER: python3.9 server.py dummy100MB 10 ubuntu
+CLIENT: python client.py 10 172.19.128.74
+
+prueba6
+10 clientes 250MB
+SERVER: python3.9 server.py dummy250MB 1 ubuntu
+CLIENT: python client.py 1 172.19.128.74
