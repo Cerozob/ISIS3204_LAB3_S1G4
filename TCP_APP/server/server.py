@@ -15,7 +15,7 @@ def log(str):
     logging.info(str)
 
 
-testfile = pathlib.Path("server/"+sys.argv[1])
+testfile = pathlib.Path(sys.argv[1])
 testclients = sys.argv[2]
 concurrentConnections=0
 clients=[]

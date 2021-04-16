@@ -1,0 +1,32 @@
+root: Connected to('172.19.128.1', 58106) 
+
+root: New thread started for Cliente0;('172.19.128.1', 58106) 
+
+root: Client #0: Bytes received: 14 
+
+root: Client#0: received message:Hello Client#0 
+
+root: Client #0: sending 5 Bytes 
+
+root: Client #0: Bytes received: 15 
+
+root: Client#0: received message:file:262144000: 
+
+root: Client #0: Bytes received: 262144020 
+
+root: file saved as: Cliente0-Prueba-1.txt 
+
+root: Client #0: sending 3 Bytes 
+
+root: Client #0: Bytes received: 36 
+
+root: Client#0: received message:MD5:ab3248888d6f10ef30a084fac6a1e2fd 
+
+root: Client#0: File MD5 is 1eb66755978b8d0c5cb7ffcbdc0d0533 
+
+root: Client #0: hash comparison result: False 
+
+root: Client #0: sending 4 Bytes 
+
+root: closing connection from client#0 
+

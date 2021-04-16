@@ -1,0 +1,191 @@
+root: Server Listening on:  
+
+root: File to send: 100MBFilenumber of clients: 5 
+
+root: Conectado con: 127.0.0.1:54574 
+
+root:  New thread started for Client #0 with address:127.0.0.1:54574 
+
+root: Cantidad de clientes conectados: 1 
+
+root: Conectado con: 127.0.0.1:54575 
+
+root: Server: Bytes received: 5 
+
+root:  New thread started for Client #1 with address:127.0.0.1:54575 
+
+root: Server: received message from Client#0:Ready 
+
+root: Cantidad de clientes conectados: 2 
+
+root: client #0is ready to get a file 
+
+root: sending client #0is ready to get a file 
+
+root: Conectado con: 127.0.0.1:54576 
+
+root: Server: Bytes received: 5 
+
+root: Server: sending 19 Bytes to client #0 
+
+root:  New thread started for Client #2 with address:127.0.0.1:54576 
+
+root: Server: received message from Client#1:Ready 
+
+root: client #1is ready to get a file 
+
+root: Cantidad de clientes conectados: 3 
+
+root: sending client #1is ready to get a file 
+
+root: Conectado con: 127.0.0.1:54577 
+
+root: Server: sending 19 Bytes to client #1 
+
+root:  New thread started for Client #3 with address:127.0.0.1:54577 
+
+root: Server: Bytes received: 5 
+
+root: Server: received message from Client#2:Ready 
+
+root: Cantidad de clientes conectados: 4 
+
+root: client #2is ready to get a file 
+
+root: Conectado con: 127.0.0.1:54578 
+
+root: sending client #2is ready to get a file 
+
+root:  New thread started for Client #4 with address:127.0.0.1:54578 
+
+root: Server: sending 19 Bytes to client #2 
+
+root: Server: Bytes received: 5 
+
+root: server : starting file sending test: 5 clients; File: 100MBFile 
+
+root: Server: received message from Client#3:Ready 
+
+root: client #3is ready to get a file 
+
+root: sending client #3is ready to get a file 
+
+root: Server: sending 19 Bytes to client #3 
+
+root: Server: Bytes received: 5 
+
+root: Server: received message from Client#4:Ready 
+
+root: client #4is ready to get a file 
+
+root: sending client #4is ready to get a file 
+
+root: Server: sending 19 Bytes to client #4 
+
+root: Sending file: 100MBFile; Size: 104857600
+ from: ('127.0.0.1', 3000) to client #0 with address: ('127.0.0.1', 54574) 
+
+root: Server: elapsed time to transfer file from ('127.0.0.1', 3000) to client #0 with address: ('127.0.0.1', 54574) :0.500230073928833milliseconds 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#0:MD5 
+
+root: Sending file: 100MBFile; Size: 104857600
+ from: ('127.0.0.1', 3000) to client #1 with address: ('127.0.0.1', 54575) 
+
+root: Server: elapsed time to transfer file from ('127.0.0.1', 3000) to client #1 with address: ('127.0.0.1', 54575) :0.48902177810668945milliseconds 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#1:MD5 
+
+root: Sending file: 100MBFile; Size: 104857600
+ from: ('127.0.0.1', 3000) to client #2 with address: ('127.0.0.1', 54576) 
+
+root: Server: elapsed time to transfer file from ('127.0.0.1', 3000) to client #2 with address: ('127.0.0.1', 54576) :0.4593479633331299milliseconds 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#2:MD5 
+
+root: Sending file: 100MBFile; Size: 104857600
+ from: ('127.0.0.1', 3000) to client #3 with address: ('127.0.0.1', 54577) 
+
+root: Server: elapsed time to transfer file from ('127.0.0.1', 3000) to client #3 with address: ('127.0.0.1', 54577) :0.47001194953918457milliseconds 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#3:MD5 
+
+root: Sending file: 100MBFile; Size: 104857600
+ from: ('127.0.0.1', 3000) to client #4 with address: ('127.0.0.1', 54578) 
+
+root: Server: elapsed time to transfer file from ('127.0.0.1', 3000) to client #4 with address: ('127.0.0.1', 54578) :0.4411025047302246milliseconds 
+
+root: Server: sending MD5 hash to client #0 with address: ('127.0.0.1', 54574) 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#4:MD5 
+
+root: Server: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Server: sending MD5 hash to client #1 with address: ('127.0.0.1', 54575) 
+
+root: Server: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Server: sending MD5 hash to client #2 with address: ('127.0.0.1', 54576) 
+
+root: Server: Bytes received: 4 
+
+root: Server: received message from Client#0:exit 
+
+root: Server: sending 4 Bytes to client #0 
+
+root: closing connection from127.0.0.1:54574 
+
+root: Server: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Server: sending MD5 hash to client #3 with address: ('127.0.0.1', 54577) 
+
+root: Server: Bytes received: 4 
+
+root: Server: received message from Client#1:exit 
+
+root: Server: sending 4 Bytes to client #1 
+
+root: closing connection from127.0.0.1:54575 
+
+root: Server: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Server: sending MD5 hash to client #4 with address: ('127.0.0.1', 54578) 
+
+root: Server: Bytes received: 4 
+
+root: Server: received message from Client#2:exit 
+
+root: Server: sending 4 Bytes to client #2 
+
+root: closing connection from127.0.0.1:54576 
+
+root: Server: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Cantidad de clientes conectados: 5 
+
+root: Server: Bytes received: 4 
+
+root: Server: received message from Client#3:exit 
+
+root: Server: sending 4 Bytes to client #3 
+
+root: closing connection from127.0.0.1:54577 
+
+root: Server: Bytes received: 4 
+
+root: Server: received message from Client#4:exit 
+
+root: Server: sending 4 Bytes to client #4 
+
+root: closing connection from127.0.0.1:54578 
+

@@ -53,12 +53,14 @@ def getData(sock,cident):
 
 def getDataSize(sock,size,cident):
     datos = bytearray()
+    UDPClientSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
+    UDPClientSocket.bind((sock.getsockname()[0], sock.getsockname()[1]))
     while True:
-        parte = sock.recv(1024)
+        parte = UDPClientSocket.recv(1024)
         datos += bytearray(parte)
         if len(datos)>=size:
             break
-    log("Client #"+str(cident)+": Bytes received: "+str(len(datos)))
+    log("Client #"+str(cident)+": Bytes received though UDP: "+str(len(datos)))
     return datos
 
 

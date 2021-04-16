@@ -1,0 +1,84 @@
+root: Server Listening on:  
+
+root: File to send: 100MBFilenumber of clients: 5 
+
+root: Conectado con: 127.0.0.1:54525 
+
+root:  New thread started for Client #0 with address:127.0.0.1:54525 
+
+root: Cantidad de clientes conectados: 1 
+
+root: Conectado con: 127.0.0.1:54526 
+
+root: Server: Bytes received: 5 
+
+root:  New thread started for Client #1 with address:127.0.0.1:54526 
+
+root: Server: received message from Client#0:Ready 
+
+root: Cantidad de clientes conectados: 2 
+
+root: client #0is ready to get a file 
+
+root: Conectado con: 127.0.0.1:54527 
+
+root: sending client #0is ready to get a file 
+
+root:  New thread started for Client #2 with address:127.0.0.1:54527 
+
+root: Server: sending 19 Bytes to client #0 
+
+root: Server: Bytes received: 5 
+
+root: Cantidad de clientes conectados: 3 
+
+root: Server: received message from Client#1:Ready 
+
+root: Conectado con: 127.0.0.1:54528 
+
+root: client #1is ready to get a file 
+
+root:  New thread started for Client #3 with address:127.0.0.1:54528 
+
+root: sending client #1is ready to get a file 
+
+root: Server: Bytes received: 5 
+
+root: Server: sending 19 Bytes to client #1 
+
+root: Server: received message from Client#2:Ready 
+
+root: Cantidad de clientes conectados: 4 
+
+root: client #2is ready to get a file 
+
+root: Conectado con: 127.0.0.1:54529 
+
+root: sending client #2is ready to get a file 
+
+root:  New thread started for Client #4 with address:127.0.0.1:54529 
+
+root: Server: sending 19 Bytes to client #2 
+
+root: Server: Bytes received: 5 
+
+root: server : starting file sending test: 5 clients; File: server\100MBFile 
+
+root: Server: received message from Client#3:Ready 
+
+root: client #3is ready to get a file 
+
+root: Server: Bytes received: 5 
+
+root: sending client #3is ready to get a file 
+
+root: Server: received message from Client#4:Ready 
+
+root: Server: sending 19 Bytes to client #3 
+
+root: client #4is ready to get a file 
+
+root: sending client #4is ready to get a file 
+
+root: Server: sending 19 Bytes to client #4 
+

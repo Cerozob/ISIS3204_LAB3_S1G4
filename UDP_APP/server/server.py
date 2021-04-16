@@ -15,7 +15,7 @@ def log(str):
     logging.info(str)
 
 
-testfile = pathlib.Path("server/"+sys.argv[1])
+testfile = pathlib.Path(sys.argv[1])
 testclients = sys.argv[2]
 concurrentConnections=0
 clients=[]
@@ -74,18 +74,25 @@ def sendData(sock,data,client):
     sock.sendall(data)
 
 def sendFile(sock,filename,client):
+    
+    UDPServerSocket = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+    address=sock.getpeername()[0]
+    port=sock.getpeername()[1]
+    UDPServerSocket.bind(server_address)
+
+    
     file=open(filename,"rb")
     size=os.path.getsize(filename)
     send=("file:"+str(size)+":").encode("utf-8")
     sock.send(send)
     time.sleep(0.5)
-    log("Sending file: "+filename.name+"; Size: "+str(size)+"\n from: "+str(sock.getsockname())+" to client #"+str(client)+" with address: "+str(sock.getpeername()))
+    log("Sending file through UDP: "+filename.name+"; Size: "+str(size)+"\n from: "+str(sock.getsockname())+" to client #"+str(client)+" with address: "+str(address))
     start=time.time()
-    sock.sendfile(file)
+    UDPServerSocket.sendto(send,(address,port))
     file.close()
     end=time.time()
     total=end-start
-    log("Server: elapsed time to transfer file from "+str(sock.getsockname())+" to client #"+str(client)+" with address: "+str(sock.getpeername())+" :"+str(total)+"milliseconds")
+    log("Server: elapsed time to transfer using UDP a file from "+str(sock.getsockname())+" to client #"+str(client)+" with address: "+str(address)+" :"+str(total)+"milliseconds")
 
 def sendMD5(sock,filename,client):
     file=open(filename,"rb")

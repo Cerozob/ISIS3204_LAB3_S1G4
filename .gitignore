@@ -2,3 +2,7 @@
 dummy100MB
 dummy250MB
 *.pcapng
+UDP_APP/server/100MBFile
+UDP_APP/server/250MBFile
+TCP_APP/server/250MBFile
+TCP_APP/server/100MBFile
