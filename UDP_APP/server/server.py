@@ -73,13 +73,11 @@ def sendData(sock,data,client):
     log("Server: sending "+str(len(data))+" Bytes to client #"+str(client))
     sock.sendall(data)
 
-def sendFile(sock,filename,client):
+def sendFile(sock,udpsock,filename,client):
     
     UDPServerSocket = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
     address=sock.getpeername()[0]
     port=sock.getpeername()[1]
-    UDPServerSocket.bind(server_address)
-
     
     file=open(filename,"rb")
     size=os.path.getsize(filename)
@@ -92,6 +90,7 @@ def sendFile(sock,filename,client):
     file.close()
     end=time.time()
     total=end-start
+    UDPServerSocket.close()
     log("Server: elapsed time to transfer using UDP a file from "+str(sock.getsockname())+" to client #"+str(client)+" with address: "+str(address)+" :"+str(total)+"milliseconds")
 
 def sendMD5(sock,filename,client):
