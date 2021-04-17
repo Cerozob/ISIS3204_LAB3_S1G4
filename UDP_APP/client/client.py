@@ -54,9 +54,8 @@ def getData(sock,cident):
 def getDataSize(sock,udpsocket,svaddress,size,cident):
     datos = bytearray()
     log("Client #"+str(cident)+": receiving file through UDP from "+svaddress)
-    counter=0
     while True:
-        parte = udpsocket.recvfrom(1024)
+        parte = udpsocket.recvfrom(51200)
         datos+=bytearray(parte[0])
         if len(datos)>=size:
             break

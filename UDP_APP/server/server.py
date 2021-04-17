@@ -45,7 +45,7 @@ ipaddress=server_address[0]
 try:
     server.bind(server_address)
 except:
-    logging.error(server.error)
+    logging.error(msg="e")
 
 server.listen(30)
 
@@ -95,16 +95,18 @@ def sendFile(sock,filename,client,clientthread):
     
     time.sleep(2)
     start = time.time()
-    data = file.read(1024)
+    # el máximo es 65508,pero 51200 permite divir los archivos de 100MB y 250MB en partes exactas
+    data = file.read(51200)
     while (data):
         if(udpsocket.sendto(data,(address,port))):
-            data = file.read(1024)
-        time.sleep(0.005)
+            data = file.read(51200)
+        # archivo de 100MB sleep en 0.001 dura 31 segundos en 1 cliente, en 250mb aun no se 
+        time.sleep(0.000001)
     file.close()
     end=time.time()
     total=end-start
     udpsocket.close()
-    log("Server: elapsed time to transfer using UDP a file from "+str(sock.getsockname())+" to client #"+str(client)+" with address: "+str(address)+" :"+str(total)+"milliseconds")
+    log("Server: elapsed time to transfer using UDP a file from "+str(sock.getsockname())+" to client #"+str(client)+" with address: "+str(address)+" :"+str(total)+"seconds")
 
 def sendMD5(sock,filename,client):
     file=open(filename,"rb")

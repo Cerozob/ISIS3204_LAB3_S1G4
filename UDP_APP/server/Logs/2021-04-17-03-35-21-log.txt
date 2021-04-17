@@ -1,0 +1,1178 @@
+root: Server Listening on:  
+
+root: File to send: 100MBFilenumber of clients: 30 
+
+root: Conectado con: 127.0.0.1:51997 
+
+root:  New thread started for Client #0 with address:127.0.0.1:51997 
+
+root: Cantidad de clientes conectados: 1 
+
+root: Conectado con: 127.0.0.1:51998 
+
+root:  New thread started for Client #1 with address:127.0.0.1:51998 
+
+root: Cantidad de clientes conectados: 2 
+
+root: Server: Bytes received: 5 
+
+root: Server: received message from Client#0:Ready 
+
+root: Conectado con: 127.0.0.1:51999 
+
+root: client #0 is ready to get a file 
+
+root:  New thread started for Client #2 with address:127.0.0.1:51999 
+
+root: sending client #0 file data 
+
+root: Server: sending 19 Bytes to client #0 
+
+root: Cantidad de clientes conectados: 3 
+
+root: Server: Bytes received: 5 
+
+root: Server: received message from Client#1:Ready 
+
+root: client #1 is ready to get a file 
+
+root: Conectado con: 127.0.0.1:52000 
+
+root: sending client #1 file data 
+
+root:  New thread started for Client #3 with address:127.0.0.1:52000 
+
+root: Server: sending 19 Bytes to client #1 
+
+root: Cantidad de clientes conectados: 4 
+
+root: Server: Bytes received: 5 
+
+root: Server: received message from Client#2:Ready 
+
+root: client #2 is ready to get a file 
+
+root: sending client #2 file data 
+
+root: Conectado con: 127.0.0.1:52001 
+
+root: Server: sending 19 Bytes to client #2 
+
+root:  New thread started for Client #4 with address:127.0.0.1:52001 
+
+root: Cantidad de clientes conectados: 5 
+
+root: Conectado con: 127.0.0.1:52002 
+
+root:  New thread started for Client #5 with address:127.0.0.1:52002 
+
+root: Server: Bytes received: 5 
+
+root: Cantidad de clientes conectados: 6 
+
+root: Server: received message from Client#3:Ready 
+
+root: client #3 is ready to get a file 
+
+root: sending client #3 file data 
+
+root: Server: Bytes received: 5 
+
+root: Server: sending 19 Bytes to client #3 
+
+root: Server: received message from Client#4:Ready 
+
+root: Conectado con: 127.0.0.1:52003 
+
+root: client #4 is ready to get a file 
+
+root:  New thread started for Client #6 with address:127.0.0.1:52003 
+
+root: sending client #4 file data 
+
+root: Server: sending 19 Bytes to client #4 
+
+root: Cantidad de clientes conectados: 7 
+
+root: Server: Bytes received: 5 
+
+root: Conectado con: 127.0.0.1:52004 
+
+root: Server: received message from Client#5:Ready 
+
+root:  New thread started for Client #7 with address:127.0.0.1:52004 
+
+root: client #5 is ready to get a file 
+
+root: sending client #5 file data 
+
+root: Cantidad de clientes conectados: 8 
+
+root: Server: sending 19 Bytes to client #5 
+
+root: Server: Bytes received: 5 
+
+root: Conectado con: 127.0.0.1:52005 
+
+root: Server: received message from Client#6:Ready 
+
+root:  New thread started for Client #8 with address:127.0.0.1:52005 
+
+root: client #6 is ready to get a file 
+
+root: sending client #6 file data 
+
+root: Cantidad de clientes conectados: 9 
+
+root: Server: sending 19 Bytes to client #6 
+
+root: Server: Bytes received: 5 
+
+root: Server: received message from Client#7:Ready 
+
+root: client #7 is ready to get a file 
+
+root: Conectado con: 127.0.0.1:52006 
+
+root: sending client #7 file data 
+
+root:  New thread started for Client #9 with address:127.0.0.1:52006 
+
+root: Server: sending 19 Bytes to client #7 
+
+root: Cantidad de clientes conectados: 10 
+
+root: Server: Bytes received: 5 
+
+root: Server: received message from Client#8:Ready 
+
+root: client #8 is ready to get a file 
+
+root: sending client #8 file data 
+
+root: Conectado con: 127.0.0.1:52007 
+
+root: Server: sending 19 Bytes to client #8 
+
+root:  New thread started for Client #10 with address:127.0.0.1:52007 
+
+root: Server: Bytes received: 5 
+
+root: Server: received message from Client#9:Ready 
+
+root: Cantidad de clientes conectados: 11 
+
+root: client #9 is ready to get a file 
+
+root: sending client #9 file data 
+
+root: Server: sending 19 Bytes to client #9 
+
+root: Conectado con: 127.0.0.1:52008 
+
+root:  New thread started for Client #11 with address:127.0.0.1:52008 
+
+root: Cantidad de clientes conectados: 12 
+
+root: Server: Bytes received: 5 
+
+root: Server: received message from Client#10:Ready 
+
+root: client #10 is ready to get a file 
+
+root: sending client #10 file data 
+
+root: Server: sending 19 Bytes to client #10 
+
+root: Conectado con: 127.0.0.1:52009 
+
+root:  New thread started for Client #12 with address:127.0.0.1:52009 
+
+root: Cantidad de clientes conectados: 13 
+
+root: Server: Bytes received: 5 
+
+root: Conectado con: 127.0.0.1:52010 
+
+root: Server: received message from Client#11:Ready 
+
+root:  New thread started for Client #13 with address:127.0.0.1:52010 
+
+root: client #11 is ready to get a file 
+
+root: sending client #11 file data 
+
+root: Cantidad de clientes conectados: 14 
+
+root: Server: Bytes received: 5 
+
+root: Server: sending 19 Bytes to client #11 
+
+root: Conectado con: 127.0.0.1:52011 
+
+root: Server: received message from Client#12:Ready 
+
+root:  New thread started for Client #14 with address:127.0.0.1:52011 
+
+root: client #12 is ready to get a file 
+
+root: sending client #12 file data 
+
+root: Cantidad de clientes conectados: 15 
+
+root: Server: sending 19 Bytes to client #12 
+
+root: Server: Bytes received: 5 
+
+root: Conectado con: 127.0.0.1:52012 
+
+root: Server: received message from Client#13:Ready 
+
+root:  New thread started for Client #15 with address:127.0.0.1:52012 
+
+root: client #13 is ready to get a file 
+
+root: sending client #13 file data 
+
+root: Cantidad de clientes conectados: 16 
+
+root: Server: sending 19 Bytes to client #13 
+
+root: Server: Bytes received: 5 
+
+root: Conectado con: 127.0.0.1:52013 
+
+root: Server: received message from Client#14:Ready 
+
+root:  New thread started for Client #16 with address:127.0.0.1:52013 
+
+root: client #14 is ready to get a file 
+
+root: sending client #14 file data 
+
+root: Cantidad de clientes conectados: 17 
+
+root: Server: sending 19 Bytes to client #14 
+
+root: Server: Bytes received: 5 
+
+root: Conectado con: 127.0.0.1:52014 
+
+root: Server: received message from Client#15:Ready 
+
+root:  New thread started for Client #17 with address:127.0.0.1:52014 
+
+root: client #15 is ready to get a file 
+
+root: sending client #15 file data 
+
+root: Cantidad de clientes conectados: 18 
+
+root: Server: sending 19 Bytes to client #15 
+
+root: Server: Bytes received: 5 
+
+root: Server: received message from Client#16:Ready 
+
+root: client #16 is ready to get a file 
+
+root: sending client #16 file data 
+
+root: Conectado con: 127.0.0.1:52015 
+
+root: Server: sending 19 Bytes to client #16 
+
+root:  New thread started for Client #18 with address:127.0.0.1:52015 
+
+root: Cantidad de clientes conectados: 19 
+
+root: Server: Bytes received: 5 
+
+root: Server: received message from Client#17:Ready 
+
+root: Conectado con: 127.0.0.1:52016 
+
+root: client #17 is ready to get a file 
+
+root:  New thread started for Client #19 with address:127.0.0.1:52016 
+
+root: sending client #17 file data 
+
+root: Server: sending 19 Bytes to client #17 
+
+root: Cantidad de clientes conectados: 20 
+
+root: Server: Bytes received: 5 
+
+root: Server: received message from Client#18:Ready 
+
+root: Conectado con: 127.0.0.1:52017 
+
+root: client #18 is ready to get a file 
+
+root:  New thread started for Client #20 with address:127.0.0.1:52017 
+
+root: sending client #18 file data 
+
+root: Server: sending 19 Bytes to client #18 
+
+root: Cantidad de clientes conectados: 21 
+
+root: Server: Bytes received: 5 
+
+root: Server: received message from Client#19:Ready 
+
+root: client #19 is ready to get a file 
+
+root: sending client #19 file data 
+
+root: Conectado con: 127.0.0.1:52018 
+
+root: Server: sending 19 Bytes to client #19 
+
+root:  New thread started for Client #21 with address:127.0.0.1:52018 
+
+root: Server: Bytes received: 5 
+
+root: Cantidad de clientes conectados: 22 
+
+root: Server: received message from Client#20:Ready 
+
+root: client #20 is ready to get a file 
+
+root: sending client #20 file data 
+
+root: Server: sending 19 Bytes to client #20 
+
+root: Conectado con: 127.0.0.1:52019 
+
+root:  New thread started for Client #22 with address:127.0.0.1:52019 
+
+root: Server: Bytes received: 5 
+
+root: Cantidad de clientes conectados: 23 
+
+root: Server: received message from Client#21:Ready 
+
+root: client #21 is ready to get a file 
+
+root: sending client #21 file data 
+
+root: Server: sending 19 Bytes to client #21 
+
+root: Conectado con: 127.0.0.1:52020 
+
+root:  New thread started for Client #23 with address:127.0.0.1:52020 
+
+root: Cantidad de clientes conectados: 24 
+
+root: Server: Bytes received: 5 
+
+root: Server: received message from Client#22:Ready 
+
+root: client #22 is ready to get a file 
+
+root: sending client #22 file data 
+
+root: Server: sending 19 Bytes to client #22 
+
+root: Conectado con: 127.0.0.1:52021 
+
+root:  New thread started for Client #24 with address:127.0.0.1:52021 
+
+root: Cantidad de clientes conectados: 25 
+
+root: Server: Bytes received: 5 
+
+root: Conectado con: 127.0.0.1:52022 
+
+root: Server: received message from Client#23:Ready 
+
+root:  New thread started for Client #25 with address:127.0.0.1:52022 
+
+root: client #23 is ready to get a file 
+
+root: sending client #23 file data 
+
+root: Cantidad de clientes conectados: 26 
+
+root: Server: sending 19 Bytes to client #23 
+
+root: Server: Bytes received: 5 
+
+root: Conectado con: 127.0.0.1:52023 
+
+root: Server: received message from Client#24:Ready 
+
+root:  New thread started for Client #26 with address:127.0.0.1:52023 
+
+root: client #24 is ready to get a file 
+
+root: sending client #24 file data 
+
+root: Cantidad de clientes conectados: 27 
+
+root: Server: sending 19 Bytes to client #24 
+
+root: Server: Bytes received: 5 
+
+root: Server: received message from Client#25:Ready 
+
+root: client #25 is ready to get a file 
+
+root: Conectado con: 127.0.0.1:52024 
+
+root: sending client #25 file data 
+
+root:  New thread started for Client #27 with address:127.0.0.1:52024 
+
+root: Server: sending 19 Bytes to client #25 
+
+root: Server: Bytes received: 5 
+
+root: Cantidad de clientes conectados: 28 
+
+root: Server: received message from Client#26:Ready 
+
+root: client #26 is ready to get a file 
+
+root: Conectado con: 127.0.0.1:52025 
+
+root: sending client #26 file data 
+
+root:  New thread started for Client #28 with address:127.0.0.1:52025 
+
+root: Server: sending 19 Bytes to client #26 
+
+root: Cantidad de clientes conectados: 29 
+
+root: Server: Bytes received: 5 
+
+root: Server: received message from Client#27:Ready 
+
+root: client #27 is ready to get a file 
+
+root: Conectado con: 127.0.0.1:52026 
+
+root: sending client #27 file data 
+
+root:  New thread started for Client #29 with address:127.0.0.1:52026 
+
+root: Server: sending 19 Bytes to client #27 
+
+root: server : starting file sending test in... 
+
+root: Server: Bytes received: 5 
+
+root: Server: received message from Client#28:Ready 
+
+root: client #28 is ready to get a file 
+
+root: sending client #28 file data 
+
+root: Server: Bytes received: 5 
+
+root: Server: sending 19 Bytes to client #28 
+
+root: Server: received message from Client#29:Ready 
+
+root: client #29 is ready to get a file 
+
+root: sending client #29 file data 
+
+root: Server: sending 19 Bytes to client #29 
+
+root: server : 5 
+
+root: server : 4 
+
+root: server : 3 
+
+root: server : 2 
+
+root: server : 1 
+
+root: server : starting file sending test: 30 clients; File: 100MBFile 
+
+root: Server: UDP Socket with address('0.0.0.0', 56975) created 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#0:udpaddr:127.0.0.1:56976 
+
+root: Server: received Client #0 UDP address: 127.0.0.1:56976 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 56975) to client #0 with address: 127.0.0.1:56976 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #0 with address: 127.0.0.1 :31.73051381111145seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 56978) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#0:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#1:udpaddr:127.0.0.1:56979 
+
+root: Server: received Client #1 UDP address: 127.0.0.1:56979 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 56978) to client #1 with address: 127.0.0.1:56979 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #1 with address: 127.0.0.1 :31.774654626846313seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 53145) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#1:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#2:udpaddr:127.0.0.1:53146 
+
+root: Server: received Client #2 UDP address: 127.0.0.1:53146 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 53145) to client #2 with address: 127.0.0.1:53146 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #2 with address: 127.0.0.1 :31.79483652114868seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 52296) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#2:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#3:udpaddr:127.0.0.1:52297 
+
+root: Server: received Client #3 UDP address: 127.0.0.1:52297 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 52296) to client #3 with address: 127.0.0.1:52297 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #3 with address: 127.0.0.1 :31.726840496063232seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 61706) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#3:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#4:udpaddr:127.0.0.1:61707 
+
+root: Server: received Client #4 UDP address: 127.0.0.1:61707 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 61706) to client #4 with address: 127.0.0.1:61707 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #4 with address: 127.0.0.1 :31.723137617111206seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 55335) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#4:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#5:udpaddr:127.0.0.1:55336 
+
+root: Server: received Client #5 UDP address: 127.0.0.1:55336 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 55335) to client #5 with address: 127.0.0.1:55336 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #5 with address: 127.0.0.1 :31.793442726135254seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 58786) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#5:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#6:udpaddr:127.0.0.1:58787 
+
+root: Server: received Client #6 UDP address: 127.0.0.1:58787 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 58786) to client #6 with address: 127.0.0.1:58787 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #6 with address: 127.0.0.1 :31.778050184249878seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 49552) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#6:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#7:udpaddr:127.0.0.1:49553 
+
+root: Server: received Client #7 UDP address: 127.0.0.1:49553 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 49552) to client #7 with address: 127.0.0.1:49553 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #7 with address: 127.0.0.1 :31.793914318084717seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 49357) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#7:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#8:udpaddr:127.0.0.1:49358 
+
+root: Server: received Client #8 UDP address: 127.0.0.1:49358 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 49357) to client #8 with address: 127.0.0.1:49358 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #8 with address: 127.0.0.1 :31.84391713142395seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 57565) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#8:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#9:udpaddr:127.0.0.1:57566 
+
+root: Server: received Client #9 UDP address: 127.0.0.1:57566 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 57565) to client #9 with address: 127.0.0.1:57566 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #9 with address: 127.0.0.1 :31.886653661727905seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 57594) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#9:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#10:udpaddr:127.0.0.1:57595 
+
+root: Server: received Client #10 UDP address: 127.0.0.1:57595 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 57594) to client #10 with address: 127.0.0.1:57595 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #10 with address: 127.0.0.1 :31.783320903778076seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 57623) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#10:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#11:udpaddr:127.0.0.1:57624 
+
+root: Server: received Client #11 UDP address: 127.0.0.1:57624 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 57623) to client #11 with address: 127.0.0.1:57624 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #11 with address: 127.0.0.1 :31.777128219604492seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 57783) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#11:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#12:udpaddr:127.0.0.1:57784 
+
+root: Server: received Client #12 UDP address: 127.0.0.1:57784 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 57783) to client #12 with address: 127.0.0.1:57784 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #12 with address: 127.0.0.1 :31.777652263641357seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 63725) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#12:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#13:udpaddr:127.0.0.1:63726 
+
+root: Server: received Client #13 UDP address: 127.0.0.1:63726 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 63725) to client #13 with address: 127.0.0.1:63726 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #13 with address: 127.0.0.1 :31.738609790802002seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 56277) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#13:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#14:udpaddr:127.0.0.1:56278 
+
+root: Server: received Client #14 UDP address: 127.0.0.1:56278 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 56277) to client #14 with address: 127.0.0.1:56278 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #14 with address: 127.0.0.1 :31.845590591430664seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 52844) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#14:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#15:udpaddr:127.0.0.1:52845 
+
+root: Server: received Client #15 UDP address: 127.0.0.1:52845 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 52844) to client #15 with address: 127.0.0.1:52845 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #15 with address: 127.0.0.1 :31.882917165756226seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 49998) created 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#16:udpaddr:127.0.0.1:49999 
+
+root: Server: received Client #16 UDP address: 127.0.0.1:49999 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 49998) to client #16 with address: 127.0.0.1:49999 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #16 with address: 127.0.0.1 :31.80035924911499seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 51234) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#16:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#17:udpaddr:127.0.0.1:51235 
+
+root: Server: received Client #17 UDP address: 127.0.0.1:51235 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 51234) to client #17 with address: 127.0.0.1:51235 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #17 with address: 127.0.0.1 :31.73254704475403seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 51239) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#17:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#18:udpaddr:127.0.0.1:51240 
+
+root: Server: received Client #18 UDP address: 127.0.0.1:51240 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 51239) to client #18 with address: 127.0.0.1:51240 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #18 with address: 127.0.0.1 :31.69159507751465seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 57147) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#18:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#19:udpaddr:127.0.0.1:57148 
+
+root: Server: received Client #19 UDP address: 127.0.0.1:57148 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 57147) to client #19 with address: 127.0.0.1:57148 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #19 with address: 127.0.0.1 :31.754332542419434seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 53726) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#19:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#20:udpaddr:127.0.0.1:53727 
+
+root: Server: received Client #20 UDP address: 127.0.0.1:53727 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 53726) to client #20 with address: 127.0.0.1:53727 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #20 with address: 127.0.0.1 :31.777572631835938seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 63226) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#20:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#21:udpaddr:127.0.0.1:63227 
+
+root: Server: received Client #21 UDP address: 127.0.0.1:63227 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 63226) to client #21 with address: 127.0.0.1:63227 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #21 with address: 127.0.0.1 :31.77110195159912seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 61760) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#21:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#22:udpaddr:127.0.0.1:61761 
+
+root: Server: received Client #22 UDP address: 127.0.0.1:61761 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 61760) to client #22 with address: 127.0.0.1:61761 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #22 with address: 127.0.0.1 :31.771158456802368seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 59894) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#22:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#23:udpaddr:127.0.0.1:59895 
+
+root: Server: received Client #23 UDP address: 127.0.0.1:59895 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 59894) to client #23 with address: 127.0.0.1:59895 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #23 with address: 127.0.0.1 :31.780718564987183seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 61650) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#23:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#24:udpaddr:127.0.0.1:61651 
+
+root: Server: received Client #24 UDP address: 127.0.0.1:61651 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 61650) to client #24 with address: 127.0.0.1:61651 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #24 with address: 127.0.0.1 :31.82014536857605seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 49766) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#24:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#25:udpaddr:127.0.0.1:49767 
+
+root: Server: received Client #25 UDP address: 127.0.0.1:49767 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 49766) to client #25 with address: 127.0.0.1:49767 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #25 with address: 127.0.0.1 :31.866366863250732seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 60867) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#25:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#26:udpaddr:127.0.0.1:60868 
+
+root: Server: received Client #26 UDP address: 127.0.0.1:60868 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 60867) to client #26 with address: 127.0.0.1:60868 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #26 with address: 127.0.0.1 :31.75430655479431seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 60879) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#26:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#27:udpaddr:127.0.0.1:60880 
+
+root: Server: received Client #27 UDP address: 127.0.0.1:60880 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 60879) to client #27 with address: 127.0.0.1:60880 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #27 with address: 127.0.0.1 :31.715408086776733seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 60885) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#27:MD5 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#28:udpaddr:127.0.0.1:60886 
+
+root: Server: received Client #28 UDP address: 127.0.0.1:60886 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 60885) to client #28 with address: 127.0.0.1:60886 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #28 with address: 127.0.0.1 :31.814006090164185seconds 
+
+root: Server: UDP Socket with address('0.0.0.0', 60339) created 
+
+root: Server: Bytes received: 23 
+
+root: Server: received message from Client#29:udpaddr:127.0.0.1:60340 
+
+root: Server: received Client #29 UDP address: 127.0.0.1:60340 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('0.0.0.0', 60339) to client #29 with address: 127.0.0.1:60340 
+
+root: Server: elapsed time to transfer using UDP a file from ('127.0.0.1', 3000) to client #29 with address: 127.0.0.1 :31.796438217163086seconds 
+
+root: Server: sending MD5 hash to client #0 with address: ('127.0.0.1', 51997) 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#29:MD5 
+
+root: Server: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Server: sending MD5 hash to client #1 with address: ('127.0.0.1', 51998) 
+
+root: Server: Bytes received: 4 
+
+root: Server: received message from Client#0:exit 
+
+root: Server: sending 4 Bytes to client #0 
+
+root: closing connection from127.0.0.1:51997 
+
+root: Server: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Server: sending MD5 hash to client #2 with address: ('127.0.0.1', 51999) 
+
+root: Server: Bytes received: 4 
+
+root: Server: received message from Client#1:exit 
+
+root: Server: sending 4 Bytes to client #1 
+
+root: closing connection from127.0.0.1:51998 
+
+root: Server: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Server: sending MD5 hash to client #3 with address: ('127.0.0.1', 52000) 
+
+root: Server: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Server: sending MD5 hash to client #4 with address: ('127.0.0.1', 52001) 
+
+root: Server: Bytes received: 4 
+
+root: Server: received message from Client#2:exit 
+
+root: Server: sending 4 Bytes to client #2 
+
+root: closing connection from127.0.0.1:51999 
+
+root: Server: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Server: sending MD5 hash to client #5 with address: ('127.0.0.1', 52002) 
+
+root: Server: Bytes received: 4 
+
+root: Server: received message from Client#3:exit 
+
+root: Server: sending 4 Bytes to client #3 
+
+root: closing connection from127.0.0.1:52000 
+
+root: Server: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Server: sending MD5 hash to client #6 with address: ('127.0.0.1', 52003) 
+
+root: Server: Bytes received: 4 
+
+root: Server: received message from Client#4:exit 
+
+root: Server: sending 4 Bytes to client #4 
+
+root: closing connection from127.0.0.1:52001 
+
+root: Server: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Server: sending MD5 hash to client #7 with address: ('127.0.0.1', 52004) 
+
+root: Server: Bytes received: 4 
+
+root: Server: received message from Client#5:exit 
+
+root: Server: sending 4 Bytes to client #5 
+
+root: closing connection from127.0.0.1:52002 
+
+root: Server: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Server: sending MD5 hash to client #8 with address: ('127.0.0.1', 52005) 
+
+root: Server: Bytes received: 4 
+
+root: Server: received message from Client#6:exit 
+
+root: Server: sending 4 Bytes to client #6 
+
+root: closing connection from127.0.0.1:52003 
+
+root: Server: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Server: sending MD5 hash to client #9 with address: ('127.0.0.1', 52006) 
+
+root: Server: Bytes received: 4 
+
+root: Server: received message from Client#7:exit 
+
+root: Server: sending 4 Bytes to client #7 
+
+root: closing connection from127.0.0.1:52004 
+
+root: Server: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Server: sending MD5 hash to client #10 with address: ('127.0.0.1', 52007) 
+
+root: Server: Bytes received: 4 
+
+root: Server: received message from Client#8:exit 
+
+root: Server: sending 4 Bytes to client #8 
+
+root: closing connection from127.0.0.1:52005 
+
+root: Server: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Server: sending MD5 hash to client #11 with address: ('127.0.0.1', 52008) 
+
+root: Server: Bytes received: 4 
+
+root: Server: received message from Client#9:exit 
+
+root: Server: sending 4 Bytes to client #9 
+
+root: closing connection from127.0.0.1:52006 
+
+root: Server: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Server: sending MD5 hash to client #12 with address: ('127.0.0.1', 52009) 
+
+root: Server: Bytes received: 4 
+
+root: Server: received message from Client#10:exit 
+
+root: Server: sending 4 Bytes to client #10 
+
+root: closing connection from127.0.0.1:52007 
+
+root: Server: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Server: sending MD5 hash to client #13 with address: ('127.0.0.1', 52010) 
+
+root: Server: Bytes received: 4 
+
+root: Server: received message from Client#11:exit 
+
+root: Server: sending 4 Bytes to client #11 
+
+root: closing connection from127.0.0.1:52008 
+
+root: Server: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Server: sending MD5 hash to client #14 with address: ('127.0.0.1', 52011) 
+
+root: Server: Bytes received: 4 
+
+root: Server: received message from Client#12:exit 
+
+root: Server: sending 4 Bytes to client #12 
+
+root: closing connection from127.0.0.1:52009 
+
+root: Server: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Server: Bytes received: 4 
+
+root: Server: received message from Client#13:exit 
+
+root: Server: sending 4 Bytes to client #13 
+
+root: closing connection from127.0.0.1:52010 
+
+root: Server: Bytes received: 4 
+
+root: Server: received message from Client#14:exit 
+
+root: Server: sending 4 Bytes to client #14 
+
+root: closing connection from127.0.0.1:52011 
+
