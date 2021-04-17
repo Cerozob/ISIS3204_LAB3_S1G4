@@ -31,7 +31,7 @@ def calculatemd5(file,cident):
     content = file.read()
     md5=hashlib.md5(content)
     md5str=md5.hexdigest()
-    log("Client#"+str(cident)+": File MD5 is "+md5str)
+    log("Client #"+str(cident)+": File MD5 is "+md5str)
     return md5str
 
 def comparehashes(hash1,hash2,cident):
@@ -51,16 +51,16 @@ def getData(sock,cident):
     log("Client #"+str(cident)+": Bytes received: "+str(len(datos)))
     return datos
 
-def getDataSize(sock,size,cident):
+def getDataSize(sock,udpsocket,svaddress,size,cident):
     datos = bytearray()
-    UDPClientSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
-    UDPClientSocket.bind((sock.getsockname()[0], sock.getsockname()[1]))
+    log("Client #"+str(cident)+": receiving file through UDP from "+svaddress)
+    counter=0
     while True:
-        parte = UDPClientSocket.recv(1024)
-        datos += bytearray(parte)
+        parte = udpsocket.recvfrom(1024)
+        datos+=bytearray(parte[0])
         if len(datos)>=size:
             break
-    log("Client #"+str(cident)+": Bytes received though UDP: "+str(len(datos)))
+    log("Client #"+str(cident)+": Bytes received through UDP: "+str(len(datos)))
     return datos
 
 
@@ -90,7 +90,7 @@ class Client(Thread):
         while True: 
             data = getData(self.sock,self.id)
             message=data.decode("utf-8")
-            log("Client#"+str(self.id)+": received message:" +message)
+            log("Client #"+str(self.id)+": received message:" +message)
             if message.lower().startswith("hello"):
                 send="Ready".encode("utf-8")
                 sendData(self.sock,send,self.id)
@@ -98,7 +98,16 @@ class Client(Thread):
                 self.ready=True
             if message.lower().startswith("file:"):
                 size=int(message.split(":")[1])
-                filedata=getDataSize(self.sock,size,self.id)
+                udpsocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
+                udpsocket.bind((str(self.sock.getsockname()[0]),0))
+                myaddress = "udpaddr:"+str(str(udpsocket.getsockname()[0])+":"+str(udpsocket.getsockname()[1]))
+                log("Client #"+str(self.id)+": UDP Socket with address "+myaddress+" created")
+                svaddress= getData(self.sock,self.id).decode("utf-8")
+                log("Client #"+str(self.id)+": received server UDP address: "+svaddress)
+                log("Client #"+str(self.id)+": sending address: "+myaddress)
+                sendData(self.sock,myaddress.encode("utf-8"),self.id)
+                filedata=getDataSize(self.sock,udpsocket,svaddress,size,self.id)
+                udpsocket.close()
                 file=open(fullpath,"wb")
                 file.write(filedata)
                 file.close()
@@ -116,7 +125,7 @@ class Client(Thread):
                 break
             if self.kill:
                 break 
-        log("closing connection from client#"+str(self.id))
+        log("closing connection from client #"+str(self.id))
         self.sock.close()
 
 i=0

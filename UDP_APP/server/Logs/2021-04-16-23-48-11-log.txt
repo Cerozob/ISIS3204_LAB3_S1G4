@@ -1,0 +1,6 @@
+root: Server Listening on:  
+
+root: File to send: 100MBFilenumber of clients: 1 
+
+root: Conectado con: 127.0.0.1:64954 
+

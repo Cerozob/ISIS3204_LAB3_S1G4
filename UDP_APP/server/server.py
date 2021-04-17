@@ -2,6 +2,7 @@ import sys
 import socket
 import logging
 import os
+import threading
 import time
 from threading import Thread
 import hashlib
@@ -19,6 +20,7 @@ testfile = pathlib.Path(sys.argv[1])
 testclients = sys.argv[2]
 concurrentConnections=0
 clients=[]
+clientudpaddr=""
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
@@ -73,24 +75,35 @@ def sendData(sock,data,client):
     log("Server: sending "+str(len(data))+" Bytes to client #"+str(client))
     sock.sendall(data)
 
-def sendFile(sock,udpsock,filename,client):
+def sendFile(sock,filename,client,clientthread):
     
-    UDPServerSocket = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
-    address=sock.getpeername()[0]
-    port=sock.getpeername()[1]
-    
+    udpsocket = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+    udpsocket.bind((server_address[0],0))
+    log("Server: UDP Socket with address"+str(udpsocket.getsockname())+" created")
     file=open(filename,"rb")
     size=os.path.getsize(filename)
     send=("file:"+str(size)+":").encode("utf-8")
     sock.send(send)
+    time.sleep(0.3)
+    sock.send(str(str(udpsocket.getsockname()[0])+":"+str(udpsocket.getsockname()[1])).encode("utf-8"))
+    clientthread.availableaddress.wait()
+    address=clientthread.clientudpaddr.split(":")[0]
+    port=int(clientthread.clientudpaddr.split(":")[1])
+    log("Server: received Client #"+str(client)+" UDP address: "+address+":"+str(port))
     time.sleep(0.5)
-    log("Sending file through UDP: "+filename.name+"; Size: "+str(size)+"\n from: "+str(sock.getsockname())+" to client #"+str(client)+" with address: "+str(address))
-    start=time.time()
-    UDPServerSocket.sendto(send,(address,port))
+    log("Sending file through UDP: "+filename.name+"; Size: "+str(size)+"\n from: "+str(udpsocket.getsockname())+" to client #"+str(client)+" with address: "+str(address)+":"+str(port))
+    
+    time.sleep(2)
+    start = time.time()
+    data = file.read(1024)
+    while (data):
+        if(udpsocket.sendto(data,(address,port))):
+            data = file.read(1024)
+        time.sleep(0.005)
     file.close()
     end=time.time()
     total=end-start
-    UDPServerSocket.close()
+    udpsocket.close()
     log("Server: elapsed time to transfer using UDP a file from "+str(sock.getsockname())+" to client #"+str(client)+" with address: "+str(address)+" :"+str(total)+"milliseconds")
 
 def sendMD5(sock,filename,client):
@@ -111,6 +124,8 @@ class ClientThread(Thread):
         self.md5=False
         self.kill = False
         self.id=identifier
+        self.clientudpaddr=""
+        self.availableaddress= threading.Event()
         log(" New thread started for Client #"+str(self.id)+" with address:"+ip+":"+str(port))
 
     def stop(self):
@@ -123,15 +138,18 @@ class ClientThread(Thread):
             data = getData(self.sock)
             message = data.decode("utf-8")
             log("Server: received message from Client#"+str(self.id)+":" +message)
+            if message.lower().startswith("udpaddr:"):
+                self.clientudpaddr=message.split(":")[1]+":"+message.split(":")[2]
+                self.availableaddress.set()
             if message.lower() == "exit":
                 sendData(self.sock,"exit".encode("utf-8"),self.id)
                 break
             elif message.lower() == "ready":
-                log("client #"+str(self.id)+"is ready to get a file")
+                log("client #"+str(self.id)+" is ready to get a file")
                 self.ready=True
                 send="Filename: "+testfile.name
                 msgsend=send.encode("utf-8")
-                log("sending client #"+str(self.id)+"is ready to get a file")
+                log("sending client #"+str(self.id)+" file data")
                 sendData(self.sock,msgsend,self.id)
                 self.md5=False
             elif message.lower() == "md5":
@@ -146,7 +164,7 @@ def sendFileToNClients(n,pFilename):
     log("server : starting file sending test: "+str(n)+" clients; File: "+str(pFilename))
     while i<n:
         if(clients[i].ready):
-            th = Thread(target=sendFile(sock=clients[i].sock,filename=pFilename,client=clients[i].id))
+            th = Thread(target=sendFile(sock=clients[i].sock,filename=pFilename,client=clients[i].id,clientthread=clients[i]))
             th.start()
             i+=1
 
@@ -166,6 +184,18 @@ while True:
     newthread.start()
     clients.append(newthread)
     if(concurrentConnections>=int(testclients)):
+        log("server : starting file sending test in...")
+        time.sleep(0.5)
+        log("server : 5")
+        time.sleep(0.5)
+        log("server : 4")
+        time.sleep(0.5)
+        log("server : 3")
+        time.sleep(0.5)
+        log("server : 2")
+        time.sleep(0.5)
+        log("server : 1")
+        time.sleep(0.5)
         sendFileToNClients(int(testclients),testfile)
     if(concurrentConnections==-1):
         break

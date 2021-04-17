@@ -1,0 +1,38 @@
+root: Server Listening on:  
+
+root: File to send: 100MBFilenumber of clients: 1 
+
+root: Conectado con: 127.0.0.1:64063 
+
+root:  New thread started for Client #0 with address:127.0.0.1:64063 
+
+root: server : starting file sending test in... 
+
+root: Server: Bytes received: 5 
+
+root: Server: received message from Client#0:Ready 
+
+root: client #0 is ready to get a file 
+
+root: sending client #0 file data 
+
+root: Server: sending 19 Bytes to client #0 
+
+root: server : 5 
+
+root: server : 4 
+
+root: server : 3 
+
+root: server : 2 
+
+root: server : 1 
+
+root: server : starting file sending test: 1 clients; File: 100MBFile 
+
+root: Server: UDP Socket with address('0.0.0.0', 63127) created 
+
+root: Server: Bytes received: 20 
+
+root: Server: received message from Client#0:('127.0.0.1', 63128) 
+

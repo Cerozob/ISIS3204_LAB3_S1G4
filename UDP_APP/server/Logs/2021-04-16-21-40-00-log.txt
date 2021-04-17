@@ -1,0 +1,54 @@
+root: Server Listening on:  
+
+root: File to send: 100MBFilenumber of clients: 3 
+
+root: Conectado con: 127.0.0.1:63645 
+
+root:  New thread started for Client #0 with address:127.0.0.1:63645 
+
+root: Cantidad de clientes conectados: 1 
+
+root: Conectado con: 127.0.0.1:63646 
+
+root: Server: Bytes received: 5 
+
+root:  New thread started for Client #1 with address:127.0.0.1:63646 
+
+root: Server: received message from Client#0:Ready 
+
+root: client #0 is ready to get a file 
+
+root: Cantidad de clientes conectados: 2 
+
+root: sending client #0 file data 
+
+root: Conectado con: 127.0.0.1:63647 
+
+root: Server: sending 19 Bytes to client #0 
+
+root: Server: Bytes received: 5 
+
+root:  New thread started for Client #2 with address:127.0.0.1:63647 
+
+root: Server: received message from Client#1:Ready 
+
+root: client #1 is ready to get a file 
+
+root: server : starting file sending test: 3 clients; File: 100MBFile 
+
+root: sending client #1 file data 
+
+root: Server: sending 19 Bytes to client #1 
+
+root: Server: UDP Socket with address('0.0.0.0', 55705) created 
+
+root: Server: Bytes received: 5 
+
+root: Server: received message from Client#2:Ready 
+
+root: client #2 is ready to get a file 
+
+root: sending client #2 file data 
+
+root: Server: sending 19 Bytes to client #2 
+
