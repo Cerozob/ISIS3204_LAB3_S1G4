@@ -1,0 +1,225 @@
+root: Server Listening on: 172.22.109.23 
+
+root: File to send: 100MBFilenumber of clients: 5 
+
+root: Conectado con: 172.22.96.1:61991 
+
+root:  New thread started for Client #0 with address:172.22.96.1:61991 
+
+root: Cantidad de clientes conectados: 1 
+
+root: Conectado con: 172.22.96.1:61992 
+
+root:  New thread started for Client #1 with address:172.22.96.1:61992 
+
+root: Cantidad de clientes conectados: 2 
+
+root: Conectado con: 172.22.96.1:61993 
+
+root: Server: Bytes received: 5 
+
+root:  New thread started for Client #2 with address:172.22.96.1:61993 
+
+root: Server: received message from Client#0:Ready 
+
+root: Cantidad de clientes conectados: 3 
+
+root: Server: Bytes received: 5 
+
+root: Server: received message from Client#1:Ready 
+
+root: client #1 is ready to get a file 
+
+root: sending client #1 file data 
+
+root: Server: sending 19 Bytes to client #1 
+
+root: client #0 is ready to get a file 
+
+root: sending client #0 file data 
+
+root: Server: Bytes received: 5 
+
+root: Server: received message from Client#2:Ready 
+
+root: client #2 is ready to get a file 
+
+root: sending client #2 file data 
+
+root: Server: sending 19 Bytes to client #2 
+
+root: Server: sending 19 Bytes to client #0 
+
+root: Conectado con: 172.22.96.1:61994 
+
+root:  New thread started for Client #3 with address:172.22.96.1:61994 
+
+root: Cantidad de clientes conectados: 4 
+
+root: Conectado con: 172.22.96.1:61995 
+
+root:  New thread started for Client #4 with address:172.22.96.1:61995 
+
+root: server : starting file sending test in... 
+
+root: Server: Bytes received: 5 
+
+root: Server: Bytes received: 5 
+
+root: Server: received message from Client#3:Ready 
+
+root: Server: received message from Client#4:Ready 
+
+root: client #4 is ready to get a file 
+
+root: sending client #4 file data 
+
+root: Server: sending 19 Bytes to client #4 
+
+root: client #3 is ready to get a file 
+
+root: sending client #3 file data 
+
+root: Server: sending 19 Bytes to client #3 
+
+root: server : 5 
+
+root: server : 4 
+
+root: server : 3 
+
+root: server : 2 
+
+root: server : 1 
+
+root: server : starting file sending test: 5 clients; File: 100MBFile 
+
+root: Server: UDP Socket with address('172.22.109.23', 53871) created 
+
+root: Server: Bytes received: 25 
+
+root: Server: received message from Client#0:udpaddr:172.22.96.1:61360 
+
+root: Server: received Client #0 UDP address: 172.22.96.1:61360 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('172.22.109.23', 53871) to client #0 with address: 172.22.96.1:61360 
+
+root: Server: elapsed time to transfer using UDP a file from ('172.22.109.23', 3000) to client #0 with address: 172.22.96.1 :26.474156141281128seconds 
+
+root: Server: UDP Socket with address('172.22.109.23', 38307) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#0:MD5 
+
+root: Server: Bytes received: 25 
+
+root: Server: received message from Client#1:udpaddr:172.22.96.1:54351 
+
+root: Server: received Client #1 UDP address: 172.22.96.1:54351 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('172.22.109.23', 38307) to client #1 with address: 172.22.96.1:54351 
+
+root: Server: elapsed time to transfer using UDP a file from ('172.22.109.23', 3000) to client #1 with address: 172.22.96.1 :26.24743914604187seconds 
+
+root: Server: UDP Socket with address('172.22.109.23', 39406) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#1:MD5 
+
+root: Server: Bytes received: 25 
+
+root: Server: received message from Client#2:udpaddr:172.22.96.1:49898 
+
+root: Server: received Client #2 UDP address: 172.22.96.1:49898 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('172.22.109.23', 39406) to client #2 with address: 172.22.96.1:49898 
+
+root: Server: elapsed time to transfer using UDP a file from ('172.22.109.23', 3000) to client #2 with address: 172.22.96.1 :26.17154049873352seconds 
+
+root: Server: UDP Socket with address('172.22.109.23', 59917) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#2:MD5 
+
+root: Server: Bytes received: 25 
+
+root: Server: received message from Client#3:udpaddr:172.22.96.1:49899 
+
+root: Server: received Client #3 UDP address: 172.22.96.1:49899 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('172.22.109.23', 59917) to client #3 with address: 172.22.96.1:49899 
+
+root: Server: elapsed time to transfer using UDP a file from ('172.22.109.23', 3000) to client #3 with address: 172.22.96.1 :26.2430362701416seconds 
+
+root: Server: UDP Socket with address('172.22.109.23', 37476) created 
+
+root: Server: Bytes received: 3 
+
+root: Server: received message from Client#3:MD5 
+
+root: Server: Bytes received: 25 
+
+root: Server: received message from Client#4:udpaddr:172.22.96.1:60688 
+
+root: Server: received Client #4 UDP address: 172.22.96.1:60688 
+
+root: Sending file through UDP: 100MBFile; Size: 104857600
+ from: ('172.22.109.23', 37476) to client #4 with address: 172.22.96.1:60688 
+
+root: Server: elapsed time to transfer using UDP a file from ('172.22.109.23', 3000) to client #4 with address: 172.22.96.1 :26.08638048171997seconds 
+
+root: Server: sending MD5 hash to client #0 with address: ('172.22.96.1', 61991) 
+
+root: Server: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Server: sending MD5 hash to client #1 with address: ('172.22.96.1', 61992) 
+
+root: Server: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Server: sending MD5 hash to client #2 with address: ('172.22.96.1', 61993) 
+
+root: Server: Bytes received: 4 
+
+root: Server: received message from Client#0:exit 
+
+root: Server: sending 4 Bytes to client #0 
+
+root: closing connection from172.22.96.1:61991 
+
+root: Server: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Server: sending MD5 hash to client #3 with address: ('172.22.96.1', 61994) 
+
+root: Server: Bytes received: 4 
+
+root: Server: received message from Client#1:exit 
+
+root: Server: sending 4 Bytes to client #1 
+
+root: closing connection from172.22.96.1:61992 
+
+root: Server: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Server: Bytes received: 4 
+
+root: Server: received message from Client#2:exit 
+
+root: Server: sending 4 Bytes to client #2 
+
+root: closing connection from172.22.96.1:61993 
+
+root: Server: Bytes received: 4 
+
+root: Server: received message from Client#3:exit 
+
+root: Server: sending 4 Bytes to client #3 
+
+root: closing connection from172.22.96.1:61994 
+
