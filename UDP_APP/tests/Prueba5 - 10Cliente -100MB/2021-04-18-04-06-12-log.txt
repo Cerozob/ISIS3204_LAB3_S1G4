@@ -1,0 +1,480 @@
+root: Connected to('172.22.96.1', 62142) 
+
+root: New thread started for Cliente0;('172.22.96.1', 62142) 
+
+root: Connected to('172.22.96.1', 62143) 
+
+root: New thread started for Cliente1;('172.22.96.1', 62143) 
+
+root: Client #0: Bytes received: 14 
+
+root: Client #0: received message:Hello Client#0 
+
+root: Client #0: sending 5 Bytes 
+
+root: Connected to('172.22.96.1', 62144) 
+
+root: New thread started for Cliente2;('172.22.96.1', 62144) 
+
+root: Client #1: Bytes received: 14 
+
+root: Client #1: received message:Hello Client#1 
+
+root: Connected to('172.22.96.1', 62145) 
+
+root: Client #1: sending 5 Bytes 
+
+root: New thread started for Cliente3;('172.22.96.1', 62145) 
+
+root: Connected to('172.22.96.1', 62146) 
+
+root: New thread started for Cliente4;('172.22.96.1', 62146) 
+
+root: Connected to('172.22.96.1', 62147) 
+
+root: New thread started for Cliente5;('172.22.96.1', 62147) 
+
+root: Connected to('172.22.96.1', 62148) 
+
+root: New thread started for Cliente6;('172.22.96.1', 62148) 
+
+root: Client #1: Bytes received: 19 
+
+root: Connected to('172.22.96.1', 62149) 
+
+root: Client #1: received message:Filename: 100MBFile 
+
+root: New thread started for Cliente7;('172.22.96.1', 62149) 
+
+root: Client #2: Bytes received: 14 
+
+root: Client #2: received message:Hello Client#2 
+
+root: Client #2: sending 5 Bytes 
+
+root: Connected to('172.22.96.1', 62150) 
+
+root: New thread started for Cliente8;('172.22.96.1', 62150) 
+
+root: Connected to('172.22.96.1', 62151) 
+
+root: Client #0: Bytes received: 19 
+
+root: New thread started for Cliente9;('172.22.96.1', 62151) 
+
+root: Client #0: received message:Filename: 100MBFile 
+
+root: Client #3: Bytes received: 14 
+
+root: Client #3: received message:Hello Client#3 
+
+root: Client #3: sending 5 Bytes 
+
+root: Client #2: Bytes received: 19 
+
+root: Client #2: received message:Filename: 100MBFile 
+
+root: Client #4: Bytes received: 14 
+
+root: Client #4: received message:Hello Client#4 
+
+root: Client #4: sending 5 Bytes 
+
+root: Client #4: Bytes received: 19 
+
+root: Client #4: received message:Filename: 100MBFile 
+
+root: Client #5: Bytes received: 14 
+
+root: Client #5: received message:Hello Client#5 
+
+root: Client #5: sending 5 Bytes 
+
+root: Client #3: Bytes received: 19 
+
+root: Client #3: received message:Filename: 100MBFile 
+
+root: Client #6: Bytes received: 14 
+
+root: Client #6: received message:Hello Client#6 
+
+root: Client #6: sending 5 Bytes 
+
+root: Client #7: Bytes received: 14 
+
+root: Client #7: received message:Hello Client#7 
+
+root: Client #7: sending 5 Bytes 
+
+root: Client #5: Bytes received: 19 
+
+root: Client #5: received message:Filename: 100MBFile 
+
+root: Client #7: Bytes received: 19 
+
+root: Client #7: received message:Filename: 100MBFile 
+
+root: Client #8: Bytes received: 14 
+
+root: Client #8: received message:Hello Client#8 
+
+root: Client #8: sending 5 Bytes 
+
+root: Client #9: Bytes received: 14 
+
+root: Client #6: Bytes received: 19 
+
+root: Client #9: received message:Hello Client#9 
+
+root: Client #6: received message:Filename: 100MBFile 
+
+root: Client #9: sending 5 Bytes 
+
+root: Client #8: Bytes received: 19 
+
+root: Client #8: received message:Filename: 100MBFile 
+
+root: Client #9: Bytes received: 19 
+
+root: Client #9: received message:Filename: 100MBFile 
+
+root: Client #0: Bytes received: 15 
+
+root: Client #0: received message:file:104857600: 
+
+root: Client #0: UDP Socket with address udpaddr:172.22.96.1:64743 created 
+
+root: Client #0: Bytes received: 19 
+
+root: Client #0: received server UDP address: 172.22.109.23:52527 
+
+root: Client #0: sending address: udpaddr:172.22.96.1:64743 
+
+root: Client #0: sending 25 Bytes 
+
+root: Client #0: receiving file through UDP from 172.22.109.23:52527 
+
+root: Client #0: Bytes received through UDP: 104857600 
+
+root: Client #1: Bytes received: 15 
+
+root: Client #1: received message:file:104857600: 
+
+root: Client #1: UDP Socket with address udpaddr:172.22.96.1:64744 created 
+
+root: file saved as: Cliente0-Prueba-10.txt 
+
+root: Client #0: sending 3 Bytes 
+
+root: Client #1: Bytes received: 19 
+
+root: Client #1: received server UDP address: 172.22.109.23:42840 
+
+root: Client #1: sending address: udpaddr:172.22.96.1:64744 
+
+root: Client #1: sending 25 Bytes 
+
+root: Client #1: receiving file through UDP from 172.22.109.23:42840 
+
+root: Client #1: Bytes received through UDP: 104857600 
+
+root: Client #2: Bytes received: 15 
+
+root: Client #2: received message:file:104857600: 
+
+root: Client #2: UDP Socket with address udpaddr:172.22.96.1:64745 created 
+
+root: file saved as: Cliente1-Prueba-10.txt 
+
+root: Client #1: sending 3 Bytes 
+
+root: Client #2: Bytes received: 19 
+
+root: Client #2: received server UDP address: 172.22.109.23:55266 
+
+root: Client #2: sending address: udpaddr:172.22.96.1:64745 
+
+root: Client #2: sending 25 Bytes 
+
+root: Client #2: receiving file through UDP from 172.22.109.23:55266 
+
+root: Client #2: Bytes received through UDP: 104857600 
+
+root: Client #3: Bytes received: 15 
+
+root: Client #3: received message:file:104857600: 
+
+root: Client #3: UDP Socket with address udpaddr:172.22.96.1:64746 created 
+
+root: file saved as: Cliente2-Prueba-10.txt 
+
+root: Client #2: sending 3 Bytes 
+
+root: Client #3: Bytes received: 19 
+
+root: Client #3: received server UDP address: 172.22.109.23:54086 
+
+root: Client #3: sending address: udpaddr:172.22.96.1:64746 
+
+root: Client #3: sending 25 Bytes 
+
+root: Client #3: receiving file through UDP from 172.22.109.23:54086 
+
+root: Client #3: Bytes received through UDP: 104857600 
+
+root: Client #4: Bytes received: 15 
+
+root: Client #4: received message:file:104857600: 
+
+root: Client #4: UDP Socket with address udpaddr:172.22.96.1:55735 created 
+
+root: file saved as: Cliente3-Prueba-10.txt 
+
+root: Client #3: sending 3 Bytes 
+
+root: Client #4: Bytes received: 19 
+
+root: Client #4: received server UDP address: 172.22.109.23:41110 
+
+root: Client #4: sending address: udpaddr:172.22.96.1:55735 
+
+root: Client #4: sending 25 Bytes 
+
+root: Client #4: receiving file through UDP from 172.22.109.23:41110 
+
+root: Client #4: Bytes received through UDP: 104857600 
+
+root: Client #5: Bytes received: 15 
+
+root: Client #5: received message:file:104857600: 
+
+root: Client #5: UDP Socket with address udpaddr:172.22.96.1:55736 created 
+
+root: file saved as: Cliente4-Prueba-10.txt 
+
+root: Client #4: sending 3 Bytes 
+
+root: Client #5: Bytes received: 19 
+
+root: Client #5: received server UDP address: 172.22.109.23:38094 
+
+root: Client #5: sending address: udpaddr:172.22.96.1:55736 
+
+root: Client #5: sending 25 Bytes 
+
+root: Client #5: receiving file through UDP from 172.22.109.23:38094 
+
+root: Client #5: Bytes received through UDP: 104857600 
+
+root: Client #6: Bytes received: 15 
+
+root: Client #6: received message:file:104857600: 
+
+root: Client #6: UDP Socket with address udpaddr:172.22.96.1:55737 created 
+
+root: file saved as: Cliente5-Prueba-10.txt 
+
+root: Client #5: sending 3 Bytes 
+
+root: Client #6: Bytes received: 19 
+
+root: Client #6: received server UDP address: 172.22.109.23:51251 
+
+root: Client #6: sending address: udpaddr:172.22.96.1:55737 
+
+root: Client #6: sending 25 Bytes 
+
+root: Client #6: receiving file through UDP from 172.22.109.23:51251 
+
+root: Client #6: Bytes received through UDP: 104857600 
+
+root: Client #7: Bytes received: 15 
+
+root: Client #7: received message:file:104857600: 
+
+root: Client #7: UDP Socket with address udpaddr:172.22.96.1:64490 created 
+
+root: file saved as: Cliente6-Prueba-10.txt 
+
+root: Client #6: sending 3 Bytes 
+
+root: Client #7: Bytes received: 19 
+
+root: Client #7: received server UDP address: 172.22.109.23:58875 
+
+root: Client #7: sending address: udpaddr:172.22.96.1:64490 
+
+root: Client #7: sending 25 Bytes 
+
+root: Client #7: receiving file through UDP from 172.22.109.23:58875 
+
+root: Client #7: Bytes received through UDP: 104857600 
+
+root: Client #8: Bytes received: 15 
+
+root: Client #8: received message:file:104857600: 
+
+root: Client #8: UDP Socket with address udpaddr:172.22.96.1:64491 created 
+
+root: file saved as: Cliente7-Prueba-10.txt 
+
+root: Client #7: sending 3 Bytes 
+
+root: Client #8: Bytes received: 19 
+
+root: Client #8: received server UDP address: 172.22.109.23:53683 
+
+root: Client #8: sending address: udpaddr:172.22.96.1:64491 
+
+root: Client #8: sending 25 Bytes 
+
+root: Client #8: receiving file through UDP from 172.22.109.23:53683 
+
+root: Client #8: Bytes received through UDP: 104857600 
+
+root: Client #9: Bytes received: 15 
+
+root: Client #9: received message:file:104857600: 
+
+root: Client #9: UDP Socket with address udpaddr:172.22.96.1:64492 created 
+
+root: file saved as: Cliente8-Prueba-10.txt 
+
+root: Client #8: sending 3 Bytes 
+
+root: Client #9: Bytes received: 19 
+
+root: Client #9: received server UDP address: 172.22.109.23:42607 
+
+root: Client #9: sending address: udpaddr:172.22.96.1:64492 
+
+root: Client #9: sending 25 Bytes 
+
+root: Client #9: receiving file through UDP from 172.22.109.23:42607 
+
+root: Client #9: Bytes received through UDP: 104857600 
+
+root: file saved as: Cliente9-Prueba-10.txt 
+
+root: Client #9: sending 3 Bytes 
+
+root: Client #0: Bytes received: 36 
+
+root: Client #0: received message:MD5:2f282b84e7e608d5852449ed940bfc51 
+
+root: Client #1: Bytes received: 36 
+
+root: Client #1: received message:MD5:2f282b84e7e608d5852449ed940bfc51 
+
+root: Client #0: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Client #0: hash comparison result: True 
+
+root: Client #0: sending 4 Bytes 
+
+root: closing connection from client #0 
+
+root: Client #2: Bytes received: 36 
+
+root: Client #2: received message:MD5:2f282b84e7e608d5852449ed940bfc51 
+
+root: Client #1: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Client #1: hash comparison result: True 
+
+root: Client #1: sending 4 Bytes 
+
+root: closing connection from client #1 
+
+root: Client #3: Bytes received: 36 
+
+root: Client #3: received message:MD5:2f282b84e7e608d5852449ed940bfc51 
+
+root: Client #2: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Client #2: hash comparison result: True 
+
+root: Client #2: sending 4 Bytes 
+
+root: closing connection from client #2 
+
+root: Client #4: Bytes received: 36 
+
+root: Client #4: received message:MD5:2f282b84e7e608d5852449ed940bfc51 
+
+root: Client #3: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Client #3: hash comparison result: True 
+
+root: Client #3: sending 4 Bytes 
+
+root: closing connection from client #3 
+
+root: Client #5: Bytes received: 36 
+
+root: Client #5: received message:MD5:2f282b84e7e608d5852449ed940bfc51 
+
+root: Client #4: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Client #4: hash comparison result: True 
+
+root: Client #4: sending 4 Bytes 
+
+root: closing connection from client #4 
+
+root: Client #6: Bytes received: 36 
+
+root: Client #6: received message:MD5:2f282b84e7e608d5852449ed940bfc51 
+
+root: Client #5: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Client #5: hash comparison result: True 
+
+root: Client #5: sending 4 Bytes 
+
+root: closing connection from client #5 
+
+root: Client #7: Bytes received: 36 
+
+root: Client #7: received message:MD5:2f282b84e7e608d5852449ed940bfc51 
+
+root: Client #6: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Client #6: hash comparison result: True 
+
+root: Client #6: sending 4 Bytes 
+
+root: closing connection from client #6 
+
+root: Client #8: Bytes received: 36 
+
+root: Client #8: received message:MD5:2f282b84e7e608d5852449ed940bfc51 
+
+root: Client #7: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Client #7: hash comparison result: True 
+
+root: Client #7: sending 4 Bytes 
+
+root: closing connection from client #7 
+
+root: Client #9: Bytes received: 36 
+
+root: Client #9: received message:MD5:2f282b84e7e608d5852449ed940bfc51 
+
+root: Client #8: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Client #8: hash comparison result: True 
+
+root: Client #8: sending 4 Bytes 
+
+root: closing connection from client #8 
+
+root: Client #9: File MD5 is 2f282b84e7e608d5852449ed940bfc51 
+
+root: Client #9: hash comparison result: True 
+
+root: Client #9: sending 4 Bytes 
+
+root: closing connection from client #9 
+
