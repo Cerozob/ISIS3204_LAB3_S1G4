@@ -100,8 +100,8 @@ def sendFile(sock,filename,client,clientthread):
     while (data):
         if(udpsocket.sendto(data,(address,port))):
             data = file.read(51200)
-        # archivo de 100MB sleep en 0.001 dura 31 segundos en 1 cliente, en 250mb aun no se 
-        time.sleep(0.001)
+        # archivo de 100MB sleep en 0.01 dura 31 segundos en 1 cliente, en 250mb aun no se 
+        time.sleep(0.01)
     file.close()
     end=time.time()
     total=end-start
