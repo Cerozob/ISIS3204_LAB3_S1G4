@@ -76,7 +76,7 @@ def sendData(sock,data,client):
     sock.sendall(data)
 
 def sendFile(sock,filename,client,clientthread):
-    
+    time.sleep(0.2)
     udpsocket = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
     udpsocket.bind((server_address[0],0))
     log("Server: UDP Socket with address"+str(udpsocket.getsockname())+" created")
